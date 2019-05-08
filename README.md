@@ -14,39 +14,39 @@ Please read the Documentation/process/changes.rst file, as it contains the requi
 
 ## Patch Submission Steps
 
-### Git Clone
+### 1. Git Clone
 
 `$ git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git`
 
-### Create a New Branch
+### 2. Create a New Branch
 
 `$ git checkout -b "new branch"`
 
-### Modify Your Files
+### 3. Modify Your Files
 
 You can also run this checkpatch script for check errors and warnings.  
 `$ perl5.28.1 ./checkpatch.pl --no-tree -f ./module-internal.h`
 
-### Add Modificated Files
+### 4. Add Modificated Files
 
 `$ git add <files>`
 
-### Commit and Deatil your Changes
+### 5. Commit and Deatil your Changes
 
 `git commit -s -v`
 
-### Check your Commit
+### 6. Check your Commit
 
 `$ git show HEAD`  
 `$ git log`  
 `$ git log --pretty=oneline --abbrev-commit`  
 `$ git show --pretty=oneline --abbrev-commit HEAD`
 
-### Format your Patch
+### 7. Format your Patch
 
 `$ git format-patch -o /tmp/ HEAD^`
 
-### Send patch over Email to your Mentor
+### 8. Send patch over Email to your Mentor
 
 `$ mutt -H /tmp/<patch file>`
 
