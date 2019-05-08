@@ -3,7 +3,8 @@
 
 There are several guides for kernel developers and users. These guides can be rendered in a number of formats, like HTML and PDF. Please read Documentation/admin-guide/README.rst first.
 
-In order to build the documentation, use `make htmldocs` or `make pdfdocs`.  The formatted documentation can also be read online at:
+In order to build the documentation, use `make htmldocs` or `make pdfdocs`.
+The formatted documentation can also be read online at:
 
 https://www.kernel.org/doc/html/latest/
 
@@ -23,7 +24,7 @@ Please read the Documentation/process/changes.rst file, as it contains the requi
 
 ### Modify Your Files
 
-You can also run this checkpatch script for check errors and warnings.
+You can also run this checkpatch script for check errors and warnings.  
 `$ perl5.28.1 ./checkpatch.pl --no-tree -f ./module-internal.h`
 
 ### Add Modificated Files
@@ -36,9 +37,9 @@ You can also run this checkpatch script for check errors and warnings.
 
 ### Check your Commit
 
-`$ git show HEAD`
-`$ git log`
-`$ git log --pretty=oneline --abbrev-commit`
+`$ git show HEAD`  
+`$ git log`  
+`$ git log --pretty=oneline --abbrev-commit`  
 `$ git show --pretty=oneline --abbrev-commit HEAD`
 
 ### Format your Patch
